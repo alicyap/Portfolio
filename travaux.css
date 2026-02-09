@@ -1,0 +1,120 @@
+/* Configuration de base pour le corps de page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    /* Le margin/padding du body est souvent reset dans header.css, sinon : */
+    margin: 0; 
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 40px 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* --- Style des Cartes "Séance" --- */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace entre les séances */
+}
+
+.seance-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden; /* Pour que le badge ne dépasse pas */
+    border-left: 5px solid #3498db; /* Une couleur par défaut (bleu) */
+    transition: transform 0.2s;
+}
+
+.seance-card:hover {
+    transform: translateX(5px); /* Petit effet au survol */
+}
+
+/* Le bandeau date/titre de séance */
+.date-badge {
+    background-color: #f1f2f6;
+    color: #2c3e50;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.content p {
+    margin: 0 0 15px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* --- Boutons de fichiers --- */
+.files {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-file {
+    text-decoration: none;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s, color 0.3s;
+    border: 1px solid #bdc3c7;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-file:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.btn-file.github {
+    background-color: #24292e;
+    color: white;
+    border-color: #24292e;
+}
+.btn-file.github:hover {
+    background-color: #444;
+}
+
+/* Responsive : Adaptation mobile */
+@media (max-width: 600px) {
+    .files {
+        flex-direction: column;
+    }
+    .btn-file {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio MIAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portfolio APM</div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="travaux.html">Travaux & Cours</a></li>
+            <li><a href="#projets">Projets & Certifs</a></li>
+            <li><a href="#final">Projet CRM</a></li>
+            <li><a href="#ressources">Ressources</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Étudiant en parcours MIAGE</p>
+            <a href="#about" class="btn-primary">Découvrir mon profil</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Étudiant passionné par le développement et la gestion de projets numériques. Ce portfolio centralise mes compétences et productions académiques.</p>
+                    <div class="buttons">
+                        <a href="assets/mon_cv_ats.pdf" target="_blank" class="btn-secondary"><i class="fas fa-file-pdf"></i> Télécharger mon CV (ATS)</a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="travaux" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Académique</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-folder-open"></i> Rubrique 1: Travaux</h3>
+                    <p>Dossiers réalisés en classe et productions académiques.</p>
+                    <ul class="file-list">
+                        <li><a href="#">TP Java Avancé.pdf</a></li>
+                        <li><a href="#">Analyse de données.pdf</a></li>
+                        <li><a href="#">Atelier Gestion de projet.zip</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-book"></i> Rubrique 2: Cours</h3>
+                    <p>Notes de cours structurées et complétées.</p>
+                    <ul class="file-list">
+                        <li><a href="#">Fiche révision Algorithmique</a></li>
+                        <li><a href="#">Synthèse Droit du numérique</a></li>
+                        <li><a href="#">Notes Management SI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title">Compétences & Projets</h2>
+            <p class="subtitle">Rubrique 3: Certifications et réalisations techniques</p>
+            
+            <div class="grid-3">
+                <div class="project-card">
+                    <div class="card-image" style="background-color: #ddd; height: 150px;"></div>
+                    <div class="card-info">
+                        <h4>Application Web</h4>
+                        <p>Développement d'un site e-commerce.</p>
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-info">
+                        <h4><i class="fas fa-certificate"></i> Certification Agile</h4>
+                        <p>Obtenue le 12/2024</p>
+                        <a href="assets/certif_agile.pdf" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="final" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title white">Projet Final & Soutenance</h2>
+            
+            <div class="showcase">
+                <div class="showcase-item">
+                    <h3>Rubrique 4: Projet CRM</h3>
+                    <p>Conception et réalisation d'un projet numérique complet intégrant toutes les compétences acquises.</p>
+                    <a href="https://github.com/monuser/monprojet" class="btn-primary">Voir le Code Source (Git)</a>
+                    <a href="#" class="btn-outline">Documentation Technique</a>
+                </div>
+
+                <div class="showcase-item">
+                    <h3>Rubrique 5: Support de Soutenance</h3>
+                    <p>Diaporama structuré pour la présentation orale.</p>
+                    <a href="assets/soutenance_final.pdf" class="btn-primary"><i class="fas fa-file-powerpoint"></i> Télécharger les slides</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ressources" class="section">
+        <div class="container">
+            <h2 class="section-title">Veille & Ressources</h2>
+            <p class="subtitle">Rubrique 6: Ressources complémentaires</p>
+            <div class="resource-list">
+                <a href="#" class="tag">Veille Techno IA</a>
+                <a href="#" class="tag">Tutoriels Git</a>
+                <a href="#" class="tag">Articles Green IT</a>
+                <a href="#" class="tag">Podcast Tech</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio Étudiant MIAGE. Codé à la main.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
