@@ -1,27 +1,38 @@
+/* --- Variables & Reset (Importées de style.css pour cohérence) --- */
+:root {
+    --primary-color: #2563eb; 
+    --secondary-color: #1e293b; 
+    --bg-light: #f8fafc;
+    --text-color: #334155;
+    --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
 /* Configuration de base pour le corps de page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    /* Le margin/padding du body est souvent reset dans header.css, sinon : */
+    font-family: 'Poppins', sans-serif; /* Police harmonisée */
+    background-color: var(--bg-light); /* Fond harmonisé */
+    color: var(--text-color);
     margin: 0; 
+    line-height: 1.6;
 }
 
 .main-content {
     max-width: 800px;
-    margin: 0 auto; /* Centrer le contenu */
+    margin: 0 auto; 
     padding: 40px 20px;
 }
 
 .page-title {
     text-align: center;
-    color: #2c3e50;
+    color: var(--secondary-color);
     margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .intro-text {
     text-align: center;
-    color: #7f8c8d;
+    color: #64748b; /* Même gris que les sous-titres de l'accueil */
     margin-bottom: 40px;
 }
 
@@ -29,32 +40,34 @@ body {
 .timeline-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espace entre les séances */
+    gap: 2rem; 
 }
 
 .seance-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    overflow: hidden; /* Pour que le badge ne dépasse pas */
-    border-left: 5px solid #3498db; /* Une couleur par défaut (bleu) */
-    transition: transform 0.2s;
+    background: var(--white);
+    border-radius: 10px; /* Arrondi harmonisé */
+    box-shadow: var(--shadow); /* Ombre harmonisée */
+    overflow: hidden; 
+    border-left: 5px solid var(--primary-color); /* Bleu principal du site */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+/* Animation au survol identique aux cartes de la page d'accueil (vers le haut) */
 .seance-card:hover {
-    transform: translateX(5px); /* Petit effet au survol */
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* Le bandeau date/titre de séance */
 .date-badge {
-    background-color: #f1f2f6;
-    color: #2c3e50;
-    padding: 8px 15px;
-    font-size: 0.85rem;
-    font-weight: bold;
+    background-color: #f1f5f9; 
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .content {
@@ -63,13 +76,12 @@ body {
 
 .content h3 {
     margin: 0 0 10px 0;
-    color: #2c3e50;
+    color: var(--secondary-color);
 }
 
 .content p {
     margin: 0 0 15px 0;
-    color: #555;
-    line-height: 1.5;
+    color: var(--text-color);
 }
 
 /* --- Boutons de fichiers --- */
@@ -79,37 +91,40 @@ body {
     flex-wrap: wrap;
 }
 
+/* Style aligné sur les boutons secondaires (btn-secondary) de style.css */
 .btn-file {
     text-decoration: none;
-    background-color: #ecf0f1;
-    color: #2c3e50;
-    padding: 8px 12px;
-    border-radius: 4px;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px; /* Arrondi harmonisé */
     font-size: 0.9rem;
+    font-weight: 500;
     transition: background 0.3s, color 0.3s;
-    border: 1px solid #bdc3c7;
+    border: 2px solid var(--primary-color); /* Bordure harmonisée */
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
 .btn-file:hover {
-    background-color: #3498db;
-    color: white;
-    border-color: #3498db;
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
+/* Style spécifique pour le bouton GitHub */
 .btn-file.github {
-    background-color: #24292e;
-    color: white;
+    color: #24292e;
     border-color: #24292e;
 }
+
 .btn-file.github:hover {
-    background-color: #444;
+    background-color: #24292e;
+    color: var(--white);
 }
 
 /* Responsive : Adaptation mobile */
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) { /* Breakpoint harmonisé à 768px */
     .files {
         flex-direction: column;
     }
