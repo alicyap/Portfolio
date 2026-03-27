@@ -128,3 +128,65 @@ footer { text-align: center; padding: 2rem; background: var(--secondary-color); 
     .grid-2, .showcase { grid-template-columns: 1fr; flex-direction: column; }
     .hero h1 { font-size: 2rem; }
 }
+
+/* --- Slider Certifications --- */
+.slider-container {
+    width: 100%;
+    overflow-x: auto; /* Permet le scroll horizontal */
+    scroll-snap-type: x mandatory; /* Effet de "magnétisme" sur les slides */
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    -ms-overflow-style: none; /* Cache la barre de défilement (IE/Edge) */
+    scrollbar-width: none; /* Cache la barre de défilement (Firefox) */
+}
+
+/* Cache la barre de défilement sur Chrome/Safari/Webkit */
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content; /* S'adapte à la largeur totale des slides */
+    margin: 0 auto; /* C'EST CETTE LIGNE QUI CENTRE LES CARTES ! */
+    padding: 10px;
+}
+
+.slide {
+    width: 300px; /* Largeur d'une carte */
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    scroll-snap-align: start; /* Le magnétisme s'arrête au début de la carte */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.slide:hover {
+    transform: translateY(-5px);
+}
+
+.slide-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Recadre l'image proprement sans l'écraser */
+    border-bottom: 1px solid #eee;
+}
+
+.slide-content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}

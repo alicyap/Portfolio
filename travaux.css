@@ -1,4 +1,4 @@
-/* --- Variables & Reset (Importées de style.css pour cohérence) --- */
+/* --- Variables & Reset (Identiques à style.css) --- */
 :root {
     --primary-color: #2563eb; 
     --secondary-color: #1e293b; 
@@ -8,35 +8,35 @@
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Configuration de base pour le corps de page */
 body {
-    font-family: 'Poppins', sans-serif; /* Police harmonisée */
-    background-color: var(--bg-light); /* Fond harmonisé */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
     color: var(--text-color);
     margin: 0; 
     line-height: 1.6;
 }
 
+/* --- Layout (Calqué sur .section et .container de style.css) --- */
 .main-content {
-    max-width: 800px;
+    max-width: 1100px; /* Même largeur maximale que l'accueil */
     margin: 0 auto; 
-    padding: 40px 20px;
+    padding: 4rem 5%; /* Même espacement vertical et horizontal */
 }
 
 .page-title {
     text-align: center;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 2rem; /* Même marge que .section-title */
     font-size: 2rem;
+    color: var(--secondary-color);
 }
 
 .intro-text {
     text-align: center;
-    color: #64748b; /* Même gris que les sous-titres de l'accueil */
-    margin-bottom: 40px;
+    margin-bottom: 3rem; /* Même marge que .subtitle */
+    color: #64748b;
 }
 
-/* --- Style des Cartes "Séance" --- */
+/* --- Style des Cartes "Séance" (Calqué sur .card de style.css) --- */
 .timeline-container {
     display: flex;
     flex-direction: column;
@@ -45,20 +45,18 @@ body {
 
 .seance-card {
     background: var(--white);
-    border-radius: 10px; /* Arrondi harmonisé */
-    box-shadow: var(--shadow); /* Ombre harmonisée */
+    border-radius: 10px;
+    box-shadow: var(--shadow);
     overflow: hidden; 
-    border-left: 5px solid var(--primary-color); /* Bleu principal du site */
+    border-left: 5px solid var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Animation au survol identique aux cartes de la page d'accueil (vers le haut) */
 .seance-card:hover {
     transform: translateY(-5px); 
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* Le bandeau date/titre de séance */
 .date-badge {
     background-color: #f1f5f9; 
     color: var(--secondary-color);
@@ -71,12 +69,12 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 2rem; /* Même padding interne que vos autres cartes */
 }
 
 .content h3 {
-    margin: 0 0 10px 0;
-    color: var(--secondary-color);
+    margin: 0 0 1rem 0;
+    color: var(--primary-color); /* On passe en bleu, comme les cartes de l'accueil ! */
 }
 
 .content p {
@@ -84,24 +82,22 @@ body {
     color: var(--text-color);
 }
 
-/* --- Boutons de fichiers --- */
+/* --- Boutons de fichiers (Calqué sur .btn-secondary de style.css) --- */
 .files {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-/* Style aligné sur les boutons secondaires (btn-secondary) de style.css */
 .btn-file {
     text-decoration: none;
     background-color: transparent;
     color: var(--primary-color);
     padding: 0.6rem 1.2rem;
-    border-radius: 5px; /* Arrondi harmonisé */
-    font-size: 0.9rem;
+    border-radius: 5px;
     font-weight: 500;
     transition: background 0.3s, color 0.3s;
-    border: 2px solid var(--primary-color); /* Bordure harmonisée */
+    border: 2px solid var(--primary-color);
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -112,7 +108,6 @@ body {
     color: var(--white);
 }
 
-/* Style spécifique pour le bouton GitHub */
 .btn-file.github {
     color: #24292e;
     border-color: #24292e;
@@ -123,13 +118,16 @@ body {
     color: var(--white);
 }
 
-/* Responsive : Adaptation mobile */
-@media screen and (max-width: 768px) { /* Breakpoint harmonisé à 768px */
+/* --- Responsive Mobile --- */
+@media screen and (max-width: 768px) { 
     .files {
         flex-direction: column;
     }
     .btn-file {
         width: 100%;
         justify-content: center;
+    }
+    .main-content {
+        padding: 2rem 5%; /* Réduit l'espacement sur téléphone */
     }
 }

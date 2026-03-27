@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Certifications - Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portfolio APM</div>
+        <ul class="nav-links">
+            <!-- <li><a href="#about">À propos</a></li> -->
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="travaux.html">Travaux & Cours</a></li>
+            <li><a href="certif.html" class="active" style="color: var(--primary-color);">Certifications</a></li>
+            <li><a href="crm.html">Projet CRM</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 30vh; min-height: 250px;">
+        <div class="hero-content">
+            <h1 style="font-size: 2.5rem;">Mes Certifications</h1>
+            <p>Validation de mes compétences techniques et transverses.</p>
+        </div>
+    </header>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-award"></i> Certifications Obtenues</h2>
+            <p class="subtitle">Attestations et certifications valorisant mon parcours.</p>
+            
+            <div class="grid-3">
+    
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-user-shield" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+        <h3>L'Atelier RGPD - MOOC CNIL</h3>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">Protection des données</p>
+        <p style="margin-bottom: 20px;">Formation complète sur le Règlement Général sur la Protection des Données (RGPD), la sécurisation des données personnelles et les enjeux de la vie privée numérique.</p>
+        <a href="assets/mooc_cnil_certif.pdf" target="_blank" class="btn-secondary">
+            <i class="fas fa-file-pdf"></i> Voir l'attestation
+        </a>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+        <h3>Formation Cybersécurité</h3>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">Sécurité des SI</p>
+        <p style="margin-bottom: 20px;">Sensibilisation aux menaces du web, gestion des mots de passe, détection du phishing et application des bonnes pratiques de sécurité informatique.</p>
+        <a href="assets/cybersecu_certif.pdf" target="_blank" class="btn-secondary">
+            <i class="fas fa-file-pdf"></i> Voir l'attestation
+        </a>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <i class="fas fa-comments" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+        <h3>Communication Skills</h3>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">Soft Skills</p>
+        <p style="margin-bottom: 20px;">Développement des compétences interpersonnelles : prise de parole en public, écoute active, travail en équipe et communication professionnelle efficace.</p>
+        <a href="assets/communication_certif.pdf" target="_blank" class="btn-secondary">
+            <i class="fas fa-file-pdf"></i> Voir l'attestation
+        </a>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio Étudiant MIAGE. Codé à la main.</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>

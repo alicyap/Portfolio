@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio MIAGE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">Portfolio APM</div>
         <ul class="nav-links">
-            <li><a href="#about">À propos</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <!-- <li><a href="#about">À propos</a></li> -->
             <li><a href="travaux.html">Travaux & Cours</a></li>
-            <li><a href="#projets">Projets & Certifs</a></li>
+            <li><a href="certif.html">Certifications</a></li>
             <li><a href="crm.html">Projet CRM</a></li>
-            <li><a href="#ressources">Ressources</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -39,9 +42,9 @@
             <h2 class="section-title">À propos de moi</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Étudiant passionné par le développement et la gestion de projets numériques. Ce portfolio centralise mes compétences et productions académiques.</p>
+                    <p>Étudiante en MASTER 1 MIAGE à l'Université Paris Nanterre. Ce portfolio centralise mes compétences et productions académiques.</p>
                     <div class="buttons">
-                        <a href="assets/mon_cv_ats.pdf" target="_blank" class="btn-secondary"><i class="fas fa-file-pdf"></i> Télécharger mon CV (ATS)</a>
+                        <a href="assets/CV_Alicya-Pearl_MARRAS_2026.pdf" target="_blank" class="btn-secondary"><i class="fas fa-file-pdf"></i> Télécharger mon CV (ATS)</a>
                         <a href="https://www.linkedin.com/in/alicya-pearl-marras/" target="_blank" class="btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     </div>
                 </div>
@@ -52,84 +55,105 @@
     <section id="travaux" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Académique</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3><i class="fas fa-folder-open"></i> Rubrique 1: Travaux</h3>
-                    <p>Dossiers réalisés en classe et productions académiques.</p>
-                    <ul class="file-list">
-                        <li><a href="#">TP Java Avancé.pdf</a></li>
-                        <li><a href="#">Analyse de données.pdf</a></li>
-                        <li><a href="#">Atelier Gestion de projet.zip</a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3><i class="fas fa-book"></i> Rubrique 2: Cours</h3>
-                    <p>Notes de cours structurées et complétées.</p>
-                    <ul class="file-list">
-                        <li><a href="#">Fiche révision Algorithmique</a></li>
-                        <li><a href="#">Synthèse Droit du numérique</a></li>
-                        <li><a href="#">Notes Management SI</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projets" class="section">
-        <div class="container">
-            <h2 class="section-title">Compétences & Projets</h2>
-            <p class="subtitle">Rubrique 3: Certifications et réalisations techniques</p>
             
-            <div class="grid-3">
-                <div class="project-card">
-                    <div class="card-image" style="background-color: #ddd; height: 150px;"></div>
-                    <div class="card-info">
-                        <h4>Application Web</h4>
-                        <p>Développement d'un site e-commerce.</p>
-                        <a href="#">Voir le projet</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-info">
-                        <h4><i class="fas fa-certificate"></i> Certification Agile</h4>
-                        <p>Obtenue le 12/2024</p>
-                        <a href="assets/certif_agile.pdf" target="_blank">Voir le certificat</a>
-                    </div>
-                </div>
+            <div class="card">
+                <h3><i class="fas fa-book" style="margin-right: 10px;"></i>Communication Digitale</h3>
+                <p style="font-size: 0.95rem; margin-bottom: 10px;">
+                    Synthèse et prise de notes structurées sur les systèmes d'information et l'acquisition client :
+                </p>
+                <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; color: var(--text-color); margin-bottom: 15px;">
+                    <li style="margin-bottom: 5px;"><strong>Stratégie SI :</strong> Différence, rôles et intégration des <strong>CRM</strong> et <strong>ERP</strong> en entreprise.</li>
+                    <li style="margin-bottom: 5px;"><strong>Acquisition :</strong> Modélisation et optimisation des <strong>funnels marketing</strong> (entonnoirs de conversion).</li>
+                    <li><strong>Analyse :</strong> Pilotage par la donnée via les indicateurs de performance (<strong>KPIs</strong>) tels que le <strong>CTR</strong> (Click-Through Rate) et le <strong>CPC</strong> (Cost Per Click).</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="travaux.html" class="btn-primary">
+                    Consulter tous mes travaux et cours <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <section id="final" class="section bg-dark text-white">
         <div class="container">
-            <h2 class="section-title white">Projet Final & Soutenance</h2>
+            <h2 class="section-title white">Projet Final</h2>
             
             <div class="showcase">
                 <div class="showcase-item">
-                    <h3>Rubrique 4: Projet CRM</h3>
-                    <p>Conception et réalisation d'un projet numérique complet intégrant toutes les compétences acquises.</p>
-                    <a href="https://github.com/monuser/monprojet" class="btn-primary">Voir le Code Source (Git)</a>
-                    <a href="#" class="btn-outline">Documentation Technique</a>
-                </div>
-
-                <div class="showcase-item">
-                    <h3>Rubrique 5: Support de Soutenance</h3>
-                    <p>Diaporama structuré pour la présentation orale.</p>
-                    <a href="assets/soutenance_final.pdf" class="btn-primary"><i class="fas fa-file-powerpoint"></i> Télécharger les slides</a>
+                    <h3>Projet Piplo CRM</h3>
+                    <p><strong>Piplo</strong> est une solution SaaS moderne de gestion de pipeline commercial. Elle intègre un dashboard intelligent, une gestion CRUD complète (Entreprises, Contacts, Tâches) et un pipeline de vente Cloud native.</p>
+                    <p style="margin-bottom: 15px; font-size: 0.9rem; color: #cbd5e1;">
+                        <strong>Stack :</strong> Next.js 15, Tailwind CSS, Supabase (PostgreSQL), Vercel.
+                    </p>
+                    
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1rem;">
+                        <a href="https://piplo-ashy.vercel.app/" target="_blank" class="btn-primary">
+                            <i class="fas fa-globe"></i> Voir le site en ligne
+                        </a>
+                        
+                        <a href="https://github.com/alicyap/Piplo" target="_blank" class="btn-outline" style="background-color: #24292e; color: white; border: none;">
+                            <i class="fab fa-github"></i> Code Source
+                        </a>
+                        
+                        <a href="crm.html" class="btn-outline">Détails du projet</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="projets" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Compétences & Certifications</h2>
+            <p class="subtitle">Validation de mes acquis</p>
+            
+            <div class="slider-container">
+                <div class="slider-track">
+                    
+                    <div class="slide">
+                        <img src="assets/mooc_cnil_certif-1.png" alt="Certification CNIL" class="slide-img">
+                        <div class="slide-content">
+                            <h4>Atelier RGPD (CNIL)</h4>
+                            <a href="certif.html" class="btn-secondary">Voir les détails</a>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="assets/cybersecu_certif-1.png" alt="Certification Cybersécurité" class="slide-img">
+                        <div class="slide-content">
+                            <h4>Cybersécurité</h4>
+                            <a href="certif.html" class="btn-secondary">Voir les détails</a>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="assets/communication_certif-1.png" alt="Communication Skills" class="slide-img">
+                        <div class="slide-content">
+                            <h4>Communication Skills</h4>
+                            <a href="certif.html" class="btn-secondary">Voir les détails</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="certif.html" class="btn-primary">Toutes mes certifications</a>
+            </div>
+            
+        </div>
+    </section>
+
     <section id="ressources" class="section">
         <div class="container">
-            <h2 class="section-title">Veille & Ressources</h2>
-            <p class="subtitle">Rubrique 6: Ressources complémentaires</p>
+            <h2 class="section-title">Ressources</h2>
+            <p class="subtitle">Liens vers les certifications</p>
             <div class="resource-list">
-                <a href="#" class="tag">Veille Techno IA</a>
-                <a href="#" class="tag">Tutoriels Git</a>
-                <a href="#" class="tag">Articles Green IT</a>
-                <a href="#" class="tag">Podcast Tech</a>
+                <a href="https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie" class="tag">RGPD</a>
+                <a href="https://lms.club-ebios.org/formations/ebiosrm" class="tag">Cybersécurité</a>
+                <a href="https://www.simplilearn.com/free-communication-skills-course-skillup" class="tag">Communication</a>
             </div>
         </div>
     </section>
